@@ -1,7 +1,6 @@
-
 package parking.core;
 
-public abstract class Employee {
+public class Employee {
     protected String name;
     protected int age;
     protected int experience;
@@ -14,6 +13,14 @@ public abstract class Employee {
         this.salary = salary;
     }
 
-    public abstract void displayInfo();
-    public abstract void work();
+    public void displayInfo() {
+        System.out.println("Ім'я: " + name);
+        System.out.println("Вік: " + age);
+        System.out.println("Стаж: " + experience + " років");
+        System.out.println("Зарплата: " + salary);
+    }
+
+    public void work() {
+        System.out.println(name + " виконує роботу співробітника паркінгу.");
+    }
 }
